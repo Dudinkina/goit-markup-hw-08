@@ -1,0 +1,58 @@
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+@import './base/common';
+@import './base/container';
+
+/* ===================== COMPONENTS ===================== */
+
+@import './components/section-title';
+@import './components/modal';
+
+/* ===================== END COMPONENTS ===================== */
+
+/* ===================== HEADER ===================== */
+
+@import './layout/header';
+
+/* ===================== END HEADER ===================== */
+
+/* ===================== HERO ===================== */
+
+@import './layout/hero';
+
+/* ===================== END HERO ===================== */
+
+/* =====================  ADVANTAGES ===================== */
+
+@import './layout/advantages';
+
+/* ===================== END ADVANTAGES ===================== */
+
+/* ===================== WHAT WE ARE DOING ===================== */
+
+@import './layout/what-we-are-doing';
+
+/* ===================== END WHAT WE ARE DOING ===================== */
+
+/* ===================== OUR TEAM ===================== */
+
+@import './layout/our-team';
+
+/* ===================== END OUR TEAM ===================== */
+
+/* ===================== REGULAR CUSTOMERS ===================== */
+
+@import './layout/regular-customers';
+
+/* ===================== END REGULAR CUSTOMERS ===================== */
+
+/* ===================== FOOTER ===================== */
+
+@import './layout/footer';
+
+/* =====================END FOOTER ===================== */
+
+/* ===================== PORTFOLIO ===================== */
+
+@import './layout/portfolio';

@@ -1,0 +1,166 @@
+.advantages {
+  padding-top: 60px;
+}
+
+.advantages-item-description {
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.advantages-list {
+  display: flex;
+  // justify-content: space-between;
+
+  &:not(:last-child) {
+    padding-right: 30px;
+  }
+}
+
+.advantages-list-item {
+  margin-left: 30px;
+  margin-top: 30px;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 120px;
+    background-image: url(../images/icons/for-sprite/Group.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
+    border-radius: 4px;
+  }
+}
+
+.advantages-list-item:nth-child(2):before {
+  background-image: url(../images/icons/for-sprite/clock.svg);
+}
+
+.advantages-list-item:nth-child(3):before {
+  background-image: url(../images/icons/for-sprite/diagram.svg);
+}
+
+.advantages-list-item:nth-child(4):before {
+  background-image: url(../images/icons/for-sprite/astronaut.svg);
+}
+
+.advantages-list-name {
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  display: flex;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .advantages-list {
+    max-width: 767px;
+    display: flex;
+    flex-wrap: wrap;
+    // text-align: center;
+    margin-left: -30px;
+    margin-top: -30px;
+    align-items: center;
+
+    &:not(:last-child) {
+      padding-right: 30px;
+    }
+  }
+
+  .advantages-list-name {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .advantages-list-item {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+
+  .advantages-list {
+    margin: 15px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding-top: 94px;
+  }
+
+  .advantages-list-item {
+    flex-basis: calc(100% / 4 - 30px);
+    justify-content: space-between;
+  }
+}
+
+// .advantages {
+//   padding-top: 94px;
+// }
+
+// .advantages-list {
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin-left: -30px;
+//   margin-top: -30px;
+
+//   &:not(:last-child) {
+//     padding-right: 30px;
+//   }
+// }
+
+// .advantages-list-item {
+//   margin-left: 30px;
+//   margin-top: 30px;
+//   flex-basis: calc(100% / 4 - 30px);
+
+//   &::before {
+//     content: '';
+//     display: block;
+//     width: 100%;
+//     height: 120px;
+//     background-image: url(../images/icons/for-sprite/Group.svg);
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-color: #f5f4fa;
+//     margin-bottom: 30px;
+//     border-radius: 4px;
+//   }
+// }
+
+// .advantages-list-item:nth-child(2):before {
+//   background-image: url(../images/icons/for-sprite/clock.svg);
+// }
+
+// .advantages-list-item:nth-child(3):before {
+//   background-image: url(../images/icons/for-sprite/diagram.svg);
+// }
+
+// .advantages-list-item:nth-child(4):before {
+//   background-image: url(../images/icons/for-sprite/astronaut.svg);
+// }
+
+// .advantages-list-name {
+//   font-size: 14px;
+//   letter-spacing: 0.03em;
+//   text-transform: uppercase;
+//   display: flex;
+
+//   &:not(:last-child) {
+//     margin-bottom: 20px;
+//   }
+// }
+
+// .advantages-item-description {
+//   font-size: 14px;
+//   line-height: 1.714;
+//   letter-spacing: 0.03em;
+//   color: #757575;
+// }

@@ -1,0 +1,139 @@
+.header {
+  background: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
+
+// .header .container {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+// }
+
+.logotype-link {
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+  margin-right: 93px;
+}
+
+.logotype-accent {
+  color: black;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.143;
+  display: flex;
+  position: relative;
+}
+
+.navigation-list-item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 53px;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    display: block;
+    transition: all 250ms;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+// .navigation-list-item:not(:last-child) {
+//   margin-right: 53px;
+// }
+
+// .navigation-list-item:hover::after,
+// .navigation-list-item:focus::after {
+//   display: block;
+//   transition: all 250ms;
+//   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+.navigation-list-link {
+  position: relative;
+}
+
+.navigation .link:hover,
+.navigation .link:focus {
+  color: rgb(33, 150, 243);
+  transition: all 250ms;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.currentLink {
+  color: #2196f3;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: #2196f3;
+    position: absolute;
+    left: 0px;
+    bottom: -32px;
+    height: 2.75px;
+    background: #2196f3;
+    border-radius: 2px;
+  }
+}
+
+// .currentLink::after {
+//   content: '';
+//   display: block;
+//   width: 100%;
+//   background-color: #2196f3;
+//   position: absolute;
+//   left: 0px;
+//   bottom: -32px;
+//   height: 2.75px;
+//   background: #2196f3;
+//   border-radius: 2px;
+// }
+
+.contacts-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  display: flex;
+  color: rgba(117, 117, 117, 1);
+}
+
+.contacts-list .link:hover,
+.contacts-list .link:focus {
+  color: #2196f3;
+  transition: all 250ms;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-list-item .link {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-list-item:not(:last-child) {
+  margin-right: 51px;
+  margin-left: auto;
+}
+
+.contacts-list-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
